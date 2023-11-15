@@ -32,7 +32,7 @@ export default function App() {
   const startNewGameHandler = () => {
     setUserNumber(null);
     setGuessRounds(0);
-    screen = <startNewGameHandler />;
+    gameOverHandler();
   };
 
   let screen = <StartGameScreen onPickNumber={pickedNumberHandler} />;
