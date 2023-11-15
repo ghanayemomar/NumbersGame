@@ -9,7 +9,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 36,
+    marginTop: 20,
     marginHorizontal: 24,
     borderRadius: 8,
     padding: 16,

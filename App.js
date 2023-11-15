@@ -21,18 +21,18 @@ export default function App() {
     return <Text>Loading...</Text>;
   }
 
-  const gameOverHandler = () => {
+  const gameOverHandler = (numberOfRounds) => {
     setGameIsOver(true);
+    setGuessRounds(numberOfRounds);
   };
 
   const pickedNumberHandler = (pickedNumber) => {
     setUserNumber(pickedNumber);
   };
-
   const startNewGameHandler = () => {
     setUserNumber(null);
     setGuessRounds(0);
-    gameOverHandler();
+    setGameIsOver(false);
   };
 
   let screen = <StartGameScreen onPickNumber={pickedNumberHandler} />;
